@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Coding is fun!</title>
+            <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min/css" rel="stylesheet">
+    </head>
+    <body>
+        <p>
+            {{ name }}
+        </p>
+        <table class="table">
+            <tr>
+                <th>Dog name</th>
+                <th>Dog type</th>
+            </tr>
+            {% for dog in dogs %}
+            <tr>
+                <td>
+                    {{ dog.name }}
+                </td>
+                <td>
+                    {{ dog.type }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
